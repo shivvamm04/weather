@@ -1,0 +1,113 @@
+.header{
+  text-align: center;
+}
+
+.search{
+  /* padding: 30px; */
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 40px auto 0px auto;
+
+}
+.sitem{
+ margin-right: 20px;
+ width: 130px;
+}
+.search input{
+  height: 30px;
+  /* width: 300px; */
+  /* margin: 20px; */
+}
+/* .linput{
+  width: 100px;
+} */
+.s2{
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  height: 28px;
+  width: 30px;
+  padding: 5px;
+}
+.side{
+  /* border: 1px solid black; */
+  position: absolute;
+  left: 10px;
+  top: 150px;
+  height: 82vh;
+  width: 10vw;
+  box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+.result{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  margin: 35px auto 0px auto;
+}
+/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+.sideTop{
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+  width: 10vw;
+  text-align: center;
+  /* color: white; */
+  /* background-color: black; */
+  padding: 7px;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+.home{
+  background-image: url("https://cdn.weatherapi.com/weather-widget/img/weatherapi-backgrounds/4_widget3.png");
+  background-attachment: fixed;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  margin-top: 5px;
+}
+.ttt{
+  background-image: url("https://cdn.weatherapi.com/weather-widget/img/weatherapi-backgrounds/4_widget3.png");
+  background-attachment: fixed;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tt{color: white;}
+
+.ll li{
+
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 3px;
+}
+@media only screen and (max-width: 600px) {
+  .search{
+    flex-wrap: wrap;
+  }
+  .sideTop{
+    position: static;
+    margin: 35px auto 0px auto;
+    width: 75%;
+    
+  }
+  .side{
+    position: static;
+    height: auto;
+    margin: 10px auto 0px auto;
+    width: 75%;
+  }
+  .fl2{
+    flex-wrap: wrap;
+  }
+
+}
+
+/* .sdiv{
+  text-align: center;
+  width: 350px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  box-shadow: 5px,10px;
+} */
