@@ -8,11 +8,14 @@ function Result(props){
             return <li key={ind} className="bg-dark text-light">{rdata.loc}</li>
         });
     }
+    
         return (
             <div>
                 <div className="result card w-75 p-4 ttt">
                     <div className="card-tittle">
-                    <h4><img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt="" /> {props.disc} {props.loc} {props.temp} </h4>
+                    <h4>
+                        {props.icon !== "0" ?<img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt="" /> :""}
+                        {props.disc} {props.loc} {props.temp} </h4>
                     <p>({props.country}) {props.timeZone}</p><hr/>
                     </div>
                     <table className="table table-bordered p-2 tt">
