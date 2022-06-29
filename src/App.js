@@ -19,9 +19,7 @@ class App extends Component{
     }
     change1Handler = (event)=>{
       event.preventDefault();
-      this.setState({change:0},()=>{
-        console.log(this.state.change)
-      })
+      this.setState({change:0})
     }
     render(){
       return(
