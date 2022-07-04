@@ -95,7 +95,7 @@ class Weather extends Component {
                     
     })
     .catch((error)=>{
-      console.log("i know from where error is occuring" ,error);
+      console.log(error);
     })
   }
   kToC = (val)=> {
