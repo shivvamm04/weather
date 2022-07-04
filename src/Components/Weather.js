@@ -95,7 +95,7 @@ class Weather extends Component {
                     
     })
     .catch((error)=>{
-      console.log(error);
+      console.log("i know from where error is occuring" ,error);
     })
   }
   kToC = (val)=> {
@@ -107,14 +107,16 @@ class Weather extends Component {
   }
 
   submitHandler=(event)=>{
+    //after filling cordinate either manually or by name hitting search button
     event.preventDefault();
     const lat = event.target.lat.value;
     const lon = event.target.lon.value;
     this.setState({lat:lat,lon:lon},()=>{
-      this.hitUrl(this.state.lat,this.state.lon)
+      this.hitUrl(this.state.lat,this.state.lon) // here i am hitting the URL
     });
   }
   changeCoHandler=(event)=>{
+    //while entring name cordinate will be automatically change
     let trg = event.target.value;
     this.setState({city:trg});
     axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${trg}&limit=5&appid=717c1995b79a72edaefb013ee0ecd2ec`)
