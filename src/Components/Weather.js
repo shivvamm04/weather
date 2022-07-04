@@ -72,7 +72,7 @@ class Weather extends Component {
       }
   }
   hitUrl = (lat, lon)=>{
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=717c1995b79a72edaefb013ee0ecd2ec`)
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=717c1995b79a72edaefb013ee0ecd2ec`)
     .then((res)=>{
       this.setState({loc:res.data.name,
                     city:res.data.name,
@@ -119,7 +119,7 @@ class Weather extends Component {
     //while entring name cordinate will be automatically change
     let trg = event.target.value;
     this.setState({city:trg});
-    axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${trg}&limit=5&appid=717c1995b79a72edaefb013ee0ecd2ec`)
+    axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${trg}&limit=5&appid=717c1995b79a72edaefb013ee0ecd2ec`)
     .then((res)=>{
         const lat = res.data[0].lat;
         const lon = res.data[0].lon;
