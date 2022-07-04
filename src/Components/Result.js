@@ -14,7 +14,7 @@ function Result(props){
                 <div className="result card w-75 p-4 ttt">
                     <div className="card-tittle">
                     <h4>
-                        {/* {props.icon !== "0" ?<img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt="" /> :""} */}
+                        {props.icon !== "0" ?<img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`} alt="" /> :""}
                         {props.disc} {props.loc} {props.temp} </h4>
                     <p>({props.country}) {props.timeZone}</p><hr/>
                     </div>
